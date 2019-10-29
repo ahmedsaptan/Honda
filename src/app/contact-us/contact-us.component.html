@@ -1,0 +1,87 @@
+<div class="container">
+
+<carousel [noPause]="false" style="padding-top: 20px; padding-bottom: 20px;">
+    <slide>
+      <img src="https://www.bankofbaroda.in/writereaddata/Portal/CMS_Template_Banner/42_1_contact-us.jpg" alt="contact us" style="display: block; width: 100%;">
+      <div class="carousel-caption d-none d-md-block">
+        <h2>Contact us </h2>
+      </div>
+    </slide>
+</carousel>
+
+
+
+<form class="ui form" style="padding-top: 10px;">
+    <h4 class="ui dividing header">ENQUIRY FEEDBACK FORM</h4>
+
+    <div class="two fields" [ngClass]="{'error': 'errorObject.category'}">
+      <div class="field">
+        <label>Category</label>
+          <select class="ui fluid dropdown" [(ngModel)]="category" name="category" (change)="categoryChangeInput()">
+              <option value="">Category</option>
+              <option value="Automobile">Automobile</option>
+              <option value="MotorCycle">MotorCycle</option>
+              <option value="Marine">Marine</option>
+              <option value="Power-Product">Power-Product</option>
+            </select>
+      </div>
+
+      <div class="field" [ngClass]="{'error': 'errorObject.name'}">
+        <label>Full Name</label>
+        <div class="field">
+          <input 
+          type="text" 
+          (change)="nameChangeInput()"
+          name="fullname" 
+          [(ngModel)]="fullName"
+          placeholder="First Name">
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="two fields">
+
+        <div class="field" [ngClass]="{'error': 'errorObject.phoneNumber'}">
+          <label>Phone Number</label>
+          <div class="field">
+            <input 
+            type="text" 
+            (change)="phoneNumberChangeinput()"
+            [(ngModel)]="phoneNumber"
+            name="phoneNumber" 
+            placeholder="01xx xxxxxxx">
+          </div>
+        </div>
+  
+      <div class="field" [ngClass]="{'error': 'errorObject.email'}">
+          <label>E-mail</label>
+          <input 
+          type="email" 
+          (change)="emailChangeInput()"
+          name="email"
+          [(ngModel)]="email"
+          placeholder="joe@schmoe.com">
+        </div>
+    </div>
+
+    <div class="field" [ngClass]="{'error': 'errorObject.description'}">
+        <label>Comment</label>
+          <textarea 
+          rows="2" 
+          (change)="descriptionChangeInput()"
+          name="comment"
+          [(ngModel)]="description"
+          spellcheck="false"></textarea>
+    </div>
+
+
+
+    <div 
+      class="ui button" 
+      [ngClass]="{'disabled': 'disabledSubmit()'}"
+      tabindex="0" 
+      (click)="sendDataToserver()">Submit</div>
+  </form>
+
+  </div>
