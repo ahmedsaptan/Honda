@@ -1,4 +1,5 @@
 const express = require('express')
+const cors = require('cors')
 
 const path = require('path')
 
@@ -138,6 +139,8 @@ const app = express()
 
 app.use(express.static(__dirname + '/dist/task'))
 
+
+app.use(cors())
 
 app.get('/api/cars', (req, res) => {
     res.json(cars)

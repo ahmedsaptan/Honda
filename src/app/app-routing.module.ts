@@ -8,7 +8,7 @@ import { ErrorComponent } from './error/error.component';
 const routes: Routes = [
   {path: 'contactus', component: ContactUsComponent},
   {path: '', component: CarouselComponent},
-  { path: ':name', component: CarDetailsComponent},
+  {path: ':name', component: CarDetailsComponent},
   {path: '**', component: ErrorComponent}
  
 ];

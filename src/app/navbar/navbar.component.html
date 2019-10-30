@@ -6,9 +6,9 @@
     </button>
 
 
-    <a class="navbar-brand" [routerLink]="['/']">
+    <a class="navbar-brand" [routerLink]="['/']" style="padding-left: 5px;">
       <img src="https://image.flaticon.com/icons/svg/806/806027.svg" width="30" height="30" class="d-inline-block align-top" alt="">
-      <span id="honda">Honda</span>
+      <span id="honda" style="padding-left: 5px;">Honda</span>
     </a>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,7 +48,7 @@
       <button type="button" class="btn btn-outline-danger">
         العربيه
       </button>
-      <div class="ui search">
+      <div class="ui search" style="padding-left: 5px;">
         <i class="search icon"></i>
       </div>
     </div>
@@ -60,5 +60,7 @@
   </div>
 
   <div id="testtest" [collapse]="models" [isAnimated]="true" class="models">
-      <app-cars [cars]="cars"></app-cars>
+      <app-cars 
+        (sendDataToNavbar)="getDataFromCar($event)"
+        [cars]="cars"></app-cars>
   </div>

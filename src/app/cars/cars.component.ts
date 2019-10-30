@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-cars',
@@ -8,6 +8,12 @@ import { Component, OnInit, Input } from '@angular/core';
 export class CarsComponent implements OnInit {
 
   @Input() cars
+  @Output() sendDataToNavbar = new EventEmitter<Boolean>()
+
+  getDataFromCardCar(event) {
+    console.log('from cars => ', event)
+    this.sendDataToNavbar.emit(event)
+  }
   constructor() { }
 
   ngOnInit() {

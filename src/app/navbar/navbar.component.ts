@@ -9,7 +9,14 @@ export class NavbarComponent implements OnInit {
 
   isCollapsed = true
   models = true
+
   @Input() cars
+
+  getDataFromCar(event) {
+    console.log("from navbar =>", event)
+    this.models = !this.models
+  }
+
   constructor() { }
 
   ngOnInit() {

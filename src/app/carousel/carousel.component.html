@@ -1,54 +1,16 @@
-<div style="margin-top: 15px;z-index: 5;" class="container">
 
+<div style="margin-top: 15px;z-index: 5;">
 
 <carousel [noPause]="false">
-    <slide>
-      <img src="https://cdn.drivek.it/configurator-imgs/cars/it/800/HONDA/HR-V/32666_SUV-5-PORTE/dscf1326-ok.jpg" alt="First slide" style="display: block; width: 100%;">
+    <slide *ngFor="let car of cars">
+      <img [src]="car.bigImage" alt="First slide" style="display: block; width: 100%;">
       <div class="carousel-caption d-none d-md-block">
-        <h3>Honda Accord Sport</h3>
-        <button type="button" class="btn btn-danger">EXPLORE</button>
+        <h3>{{car.model}}</h3>
+        <button type="button" class="btn btn-dark">
+            <a [routerLink]="[car.model.toLocaleLowerCase()]">EXPLORE</a>
+        </button>
       </div>
     </slide>
-    <slide>
-      <img src="https://cdn.drivek.it/configurator-imgs/cars/it/800/HONDA/HR-V/32666_SUV-5-PORTE/dscf1326-ok.jpg" alt="Second slide" style="display: block; width: 100%;">
-      <div class="carousel-caption d-none d-md-block">
-        <h3>HR_V</h3>
-        <button type="button" class="btn btn-danger">EXPLORE</button>
-      </div>
-    </slide>
-    <slide>
-      <img src="https://images.unsplash.com/photo-1561823528-057f4774dd3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80" alt="Third slide" style="display: block; width: 100%;">
-      <div class="carousel-caption d-none d-md-block">
-        <h3>Third slide label</h3>
-        <button type="button" class="btn btn-danger">EXPLORE</button>
-      </div>
-    </slide>
-
-    <slide>
-        <img src="https://images.unsplash.com/photo-1542046272227-d247df21628a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80" alt="Third slide" style="display: block; width: 100%;">
-        <div class="carousel-caption d-none d-md-block">
-          <h3>Honda Civic White</h3>
-          <button type="button" class="btn btn-danger">EXPLORE</button>
-        </div>
-      </slide>
-
-
-      <slide>
-          <img src="https://images.unsplash.com/photo-1570303278489-041bd897a873?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80" alt="Third slide" style="display: block; width: 100%;">
-          <div class="carousel-caption d-none d-md-block">
-            <h3>Honda Civic Red</h3>
-            <button type="button" class="btn btn-danger">EXPLORE</button>
-          </div>
-        </slide>
-
-
-        <slide>
-            <img src="https://images.unsplash.com/photo-1505326485568-dfc612f9f0f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="Third slide" style="display: block; width: 100%;">
-            <div class="carousel-caption d-none d-md-block">
-              <h3>Honda Civic R_TYPE</h3>
-              <button type="button" class="btn btn-danger">EXPLORE</button>
-            </div>
-          </slide>
   </carousel>
 
 </div>

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-carousel',
@@ -7,45 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CarouselComponent implements OnInit {
 
-  // images_list = [
-  //   {
-  //     url: "http://cdn-ds.com/stock/2019-Honda-Accord-Sport-2-0T-Lima-OH/seo/VAMP3262-1HGCV2F39KA019060/sz_308240/5d98aed3743304359e81e73e19ce241d.jpg",
-  //     title: "HONDA Accord",
-  //     description: "Design For Life"
-  //   },
-  //   {
-  //     url: ,
-  //     title:,
-  //     description: 
-  //   },
-  //   {
-  //     url: ,
-  //     title:,
-  //     description: 
-  //   },
-  //   {
-  //     url: ,
-  //     title:,
-  //     description: 
-  //   },
-  //   {
-  //     url: ,
-  //     title:,
-  //     description: 
-  //   },
-  //   {
-  //     url: ,
-  //     title:,
-  //     description: 
-  //   },
-  //   {
-  //     url: ,
-  //     title:,
-  //     description: 
-  //   },
-  // ]
-
-  constructor() { }
+  cars
+  constructor(private http: HttpClient) { 
+    this.http.get('http://localhost:3000/api/cars').subscribe((res) => {
+      console.log(res)
+      this.cars = res
+    })
+  }
 
   ngOnInit() {
   }

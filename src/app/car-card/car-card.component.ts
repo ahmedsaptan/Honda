@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-car-card',
@@ -10,9 +10,12 @@ export class CarCardComponent implements OnInit {
   @Input() url
   @Input() model
   @Input() price
+  @Output() sendToggleTOcars = new EventEmitter<Boolean>()
 
   onClickExplan(title) {
     console.log(title.innerText.toString().toLocaleLowerCase())
+    this.sendToggleTOcars.emit(true)
+
   }
   constructor() { }
 
