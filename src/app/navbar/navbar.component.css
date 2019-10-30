@@ -3,3 +3,9 @@
     font-size: large;
     font-weight: bold;;
 }
+
+.models {
+    position: absolute;
+    z-index: 10;
+    background-color: seashell;
+}

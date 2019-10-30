@@ -1,0 +1,8 @@
+<div class="card-deck models">
+  <app-car-card
+    *ngFor="let car of cars"
+    [url]="car.url"
+    [model]="car.model"
+    [price]="car.price"
+  ></app-car-card>
+</div>

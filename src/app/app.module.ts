@@ -11,13 +11,22 @@ import { AppComponent } from './app.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+import { CarCardComponent } from './car-card/car-card.component';
+import { CarsComponent } from './cars/cars.component';
+import { CarDetailsComponent } from './car-details/car-details.component';
+import { ErrorComponent } from './error/error.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CarouselComponent,
     NavbarComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    CarCardComponent,
+    CarsComponent,
+    CarDetailsComponent,
+    ErrorComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +35,8 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
     BrowserAnimationsModule,
     CollapseModule.forRoot(),
     ButtonsModule.forRoot(),
-    FormsModule
+    FormsModule,
+    BsDropdownModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -19,21 +19,27 @@
 
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Automobiles <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Models</a>
+          <button class="btn btn-light">
+              <a class="nav-link" href="#">AUTOMOBILES <span class="sr-only">(current)</span></a>
+          </button>
+          
         </li>
      
         <li class="nav-item">
-            <a class="nav-link" href="#">Owners</a>
+            <button type="button" (click)="models = !models"
+              [attr.aria-expanded]="!models" aria-controls="testtest" class="btn btn-light">
+              <a class="nav-link">MODELS</a>
+            </button>
         </li>
+
+        <li class="nav-item">
+            <button class="btn btn-light">
+                <a class="nav-link" href="#">OWNERS <span class="sr-only">(current)</span></a>
+            </button>
+            
+          </li>
       </ul>
       
-      
-      
-
-
       <button type="button" class="btn btn-danger" [routerLink]="['/contactus']">
         Contact us
       </button>
@@ -50,5 +56,9 @@
 
   
   <div id="collapseBasic" [collapse]="isCollapsed" [isAnimated]="true">
-  <div class="well well-lg card card-block card-header">Some content</div>
+    <div class="well well-lg card card-block card-header">Some content</div>
+  </div>
+
+  <div id="testtest" [collapse]="models" [isAnimated]="true" class="models">
+      <app-cars [cars]="cars"></app-cars>
   </div>
