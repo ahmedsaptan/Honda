@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, isDevMode } from '@angular/core';
 import { setTheme } from 'ngx-bootstrap/utils';
 import { HttpClient } from '@angular/common/http';
 
@@ -12,12 +12,18 @@ export class AppComponent {
   cars = null
   constructor(private http: HttpClient) {
     setTheme('bs4'); // or 'bs4'
-    http.get('api/cars').subscribe((res) => {
+    let url = ''
+    if (isDevMode) {
+      url = "http://localhost:3000/api/cars"
+    } else {
+      url = 'api/cars'
+    }
+    http.get(url).subscribe((res) => {
       console.log(res)
       this.cars = res
     })
 
-  
+
   }
 
 }

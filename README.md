@@ -9,11 +9,11 @@ i make two build with it one for arabic and anther one for english
 but not but into the same website but you can see it in different webpage until i modify this code
 
 ```bash
-ng start:ar
+npm run start:ar
 ```
 to start the arabic app, and
 
 ```bash
-ng start
+npm run start
 ```
 to start the english app

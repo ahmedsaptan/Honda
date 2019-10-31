@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, isDevMode } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { Router, Event, NavigationStart, NavigationEnd, NavigationError } from '@angular/router';
@@ -12,17 +12,24 @@ export class CarDetailsComponent implements OnInit {
 
   carName = null
   car = null
-  
-  constructor(private route: ActivatedRoute, private http: HttpClient, private router: Router) { 
-  
+
+  constructor(private route: ActivatedRoute, private http: HttpClient, private router: Router) {
+
     this.router.events.subscribe((event: Event) => {
       if (event instanceof NavigationEnd) {
-          // Hide loading indicator
-          this.carName = this.route.snapshot.paramMap.get("name")
-          console.log(this.carName)
-          this.http.get(`api/cars/${this.carName}`).subscribe((res) => {
+        console.log("car detail")
+
+        this.carName = this.route.snapshot.paramMap.get("name")
+        let url = ''
+        if (isDevMode) {
+          url = `http://localhost:3000/api/cars/${this.carName}`
+        } else {
+          url = `api/cars/${this.carName}`
+        }
+        console.log(this.carName)
+        this.http.get(url).subscribe((res) => {
           this.car = res
-          })
+        })
       }
     })
   }
