@@ -14,7 +14,7 @@
 <form class="ui form" style="padding-top: 10px;">
     <h4 class="ui dividing header">ENQUIRY FEEDBACK FORM</h4>
 
-    <div class="two fields" [ngClass]="{'error': 'errorObject.category'}">
+    <div class="two fields" >
       <div class="field">
         <label>Category</label>
           <select class="ui fluid dropdown" [(ngModel)]="category" name="category" (change)="categoryChangeInput()">
@@ -26,7 +26,7 @@
             </select>
       </div>
 
-      <div class="field" [ngClass]="{'error': 'errorObject.name'}">
+      <div class="field" >
         <label>Full Name</label>
         <div class="field">
           <input 
@@ -42,7 +42,7 @@
 
     <div class="two fields">
 
-        <div class="field" [ngClass]="{'error': 'errorObject.phoneNumber'}">
+        <div class="field">
           <label>Phone Number</label>
           <div class="field">
             <input 
@@ -54,7 +54,7 @@
           </div>
         </div>
   
-      <div class="field" [ngClass]="{'error': 'errorObject.email'}">
+      <div class="field">
           <label>E-mail</label>
           <input 
           type="email" 
@@ -65,7 +65,7 @@
         </div>
     </div>
 
-    <div class="field" [ngClass]="{'error': 'errorObject.description'}">
+    <div class="field">
         <label>Comment</label>
           <textarea 
           rows="2" 
@@ -79,7 +79,6 @@
 
     <div 
       class="ui button" 
-      [ngClass]="{'disabled': 'disabledSubmit()'}"
       tabindex="0" 
       (click)="sendDataToserver()">Submit</div>
   </form>
