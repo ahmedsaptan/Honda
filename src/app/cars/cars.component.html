@@ -1,9 +1,3 @@
-<div class="card-deck models">
-  <app-car-card
-    (sendToggleTOcars)="getDataFromCardCar($event)"
-    *ngFor="let car of cars"
-    [url]="car.url"
-    [model]="car.model"
-    [price]="car.price"
-  ></app-car-card>
+<div class="card-deck">
+    <app-car-card (sendToggleTOcars)="getDataFromCardCar($event)" *ngFor="let car of cars" [url]="car.url" [model]="car.model" [price]="car.price"></app-car-card>
 </div>

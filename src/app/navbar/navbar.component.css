@@ -1,11 +1,22 @@
 #honda {
     color: red;
     font-size: large;
-    font-weight: bold;;
+    font-weight: bold;
+    ;
 }
 
 .models {
     position: absolute;
     z-index: 10;
     background-color: seashell;
+}
+
+.sett {
+    position: absolute;
+    z-index: 10;
+    background-color: seashell;
+}
+
+.mycontent-left {
+    border-right: 1px solid #333;
 }

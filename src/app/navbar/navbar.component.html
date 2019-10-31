@@ -1,66 +1,206 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
 
-    <button type="button" (click)="isCollapsed = !isCollapsed"
-      [attr.aria-expanded]="!isCollapsed" aria-controls="collapseBasic">
-      <i class="align justify icon"></i>
-    </button>
+  <button type="button" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed" aria-controls="collapseBasic">
+    <i class="align justify icon"></i>
+   </button>
 
 
-    <a class="navbar-brand" [routerLink]="['/']" style="padding-left: 5px;">
-      <img src="https://image.flaticon.com/icons/svg/806/806027.svg" width="30" height="30" class="d-inline-block align-top" alt="">
-      <span id="honda" style="padding-left: 5px;">Honda</span>
-    </a>
+  <a class="navbar-brand" [routerLink]="['/']" style="padding-left: 5px;">
+    <img src="https://image.flaticon.com/icons/svg/806/806027.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+    <span id="honda" style="padding-left: 5px;">Honda</span>
+  </a>
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-  
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <button class="btn btn-light">
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <button class="btn btn-light">
               <a class="nav-link" href="#">AUTOMOBILES <span class="sr-only">(current)</span></a>
           </button>
-          
-        </li>
-     
-        <li class="nav-item">
-            <button type="button" (click)="models = !models"
-              [attr.aria-expanded]="!models" aria-controls="testtest" class="btn btn-light">
+
+      </li>
+
+      <li class="nav-item">
+        <button type="button" (click)="models = !models" [attr.aria-expanded]="!models" aria-controls="testtest" class="btn btn-light">
               <a class="nav-link">MODELS</a>
             </button>
-        </li>
+      </li>
 
-        <li class="nav-item">
-            <button class="btn btn-light">
+      <li class="nav-item">
+        <button class="btn btn-light">
                 <a class="nav-link" href="#">OWNERS <span class="sr-only">(current)</span></a>
             </button>
-            
-          </li>
-      </ul>
-      
-      <button type="button" class="btn btn-danger" [routerLink]="['/contactus']">
+
+      </li>
+    </ul>
+
+    <button type="button" class="btn btn-danger" [routerLink]="['/contactus']">
         Contact us
       </button>
 
 
-      <button type="button" class="btn btn-outline-danger">
+    <button type="button" class="btn btn-outline-danger">
         العربيه
       </button>
-      <div class="ui search" style="padding-left: 5px;">
-        <i class="search icon"></i>
-      </div>
+    <div class="ui search" style="padding-left: 5px;">
+      <i class="search icon"></i>
     </div>
-  </nav>
-
-  
-  <div id="collapseBasic" [collapse]="isCollapsed" [isAnimated]="true">
-    <div class="well well-lg card card-block card-header">Some content</div>
   </div>
+</nav>
 
-  <div id="testtest" [collapse]="models" [isAnimated]="true" class="models">
-      <app-cars 
-        (sendDataToNavbar)="getDataFromCar($event)"
-        [cars]="cars"></app-cars>
+
+<div id="collapseBasic" [collapse]="isCollapsed" [isAnimated]="true" class="sett">
+  <div class="container">
+    <div class="row">
+
+      <div class="col">
+        <div class="ui link list">
+
+          <div class="active item">
+            <div class="header" style="color: red;">Home</div>
+          </div>
+
+          <a class="item">
+            <div class="header">ABOUT</div>
+          </a>
+          <a class="item">
+            <div class="header">SAFETY</div>
+          </a>
+          <a class="item">
+            <div class="header">TECHNOLOGY</div>
+          </a>
+          <a class="item">
+            <div class="header">SERVICE AND WARANTY</div>
+          </a>
+          <a class="item">
+            <div class="header">ABOUT THE DELLAR</div>
+          </a>
+          <hr>
+          <a class="item">HONDA WORLD WIDE</a>
+          <a class="item">OFFERS AND PROMOTIONS</a>
+          <a class="item">THE SOCIAL WALL</a>
+          <a class="item">MEDIA CENTER</a>
+        </div>
+      </div>
+
+      <div class="mycontent-left"></div>
+
+      <div class="col">
+
+        <div class="ui middle aligned animated list">
+
+          <div class="item">
+            <img class="ui avatar image" src="../../assets/sedan.png">
+            <div class="content">
+              <div class="header">Autmbiles</div>
+            </div>
+          </div>
+
+          <div class="item">
+            <img class="ui avatar image" src="../../assets/motor-sports.png">
+            <div class="content">
+              <div class="header">Motocycle</div>
+            </div>
+          </div>
+
+          <div class="item">
+            <img class="ui avatar image" src="../../assets/scan.png">
+            <div class="content">
+              <div class="header">Power Products</div>
+            </div>
+          </div>
+
+          <div class="item">
+            <img class="ui avatar image" src="../../assets/rgb.png">
+            <div class="content">
+              <div class="header">Marine</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="mycontent-left"></div>
+
+
+      <div class="col">
+        <form class="ui form">
+
+          <h4 class="ui dividing header">Country</h4>
+
+          <div class="field">
+            <label>I Live in</label>
+            <select class="ui fluid dropdown">
+                <option value="">State</option>
+                <option value="AL">Alabama</option>
+                <option value="AK">Alaska</option>
+                <option value="AZ">Arizona</option>
+                <option value="AR">Arkansas</option>
+                <option value="CA">California</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label>I Live in</label>
+            <select class="ui fluid dropdown">
+                <option value="">Lang</option>
+                <option value="ARBIC">en</option>
+                <option value="AK">ar</option>
+                <option value="AZ">Arizona</option>
+                <option value="AR">Arkansas</option>
+                <option value="CA">California</option>
+            </select>
+          </div>
+
+          <div class="ui button" tabindex="0" style="color: red;"> Processed</div>
+        </form>
+      </div>
+
+      <div class="mycontent-left"></div>
+
+
+      <div class="col">
+        <h4 class="ui dividing header">FOLLOW US</h4>
+        <div class="ui middle aligned animated list">
+
+          <div class="item">
+            <img class="ui avatar image" src="../../assets/facebook.png">
+            <div class="content">
+              <div class="header">Facebook</div>
+            </div>
+          </div>
+
+          <div class="item">
+            <img class="ui avatar image" src="../../assets/twitter.png">
+            <div class="content">
+              <div class="header">Twitter</div>
+            </div>
+          </div>
+
+          <div class="item">
+            <img class="ui avatar image" src="../../assets/youtube.png">
+            <div class="content">
+              <div class="header">Youtube</div>
+            </div>
+          </div>
+
+          <div class="item">
+            <img class="ui avatar image" src="../../assets/instagram.png">
+            <div class="content">
+              <div class="header">Instagram</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
   </div>
+</div>
+
+<div id="testtest" [collapse]="models" [isAnimated]="true" class="models">
+  <app-cars (sendDataToNavbar)="getDataFromCar($event)" [cars]="cars"></app-cars>
+</div>
