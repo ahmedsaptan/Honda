@@ -30,6 +30,14 @@
             "es5BrowserSupport": true
           },
           "configurations": {
+            "ar": {
+              "aot": true,
+              "outputPath": "dist/ar/",
+              "i18nFile": "src/locale/messages.ar.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "ar",
+              "i18nMissingTranslation": "error"
+            },
             "production": {
               "fileReplacements": [
                 {
@@ -64,8 +72,10 @@
           "configurations": {
             "production": {
               "browserTarget": "task:build:production"
-            }
-          }
+            },
+            "ar": {
+              "browserTarget": "task:build:ar"
+            }}
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
