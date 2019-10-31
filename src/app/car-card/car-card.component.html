@@ -1,8 +1,7 @@
-<div class="card">
-    <div class="hover01">
+<div class="card" *ngIf="url && model && price">
+    <div class="hover01" >
         <figure><img [src]="url" class="card-img-top" /></figure>
-
-      </div>
+    </div>
     <div class="card-body">
       <h5 class="card-title" #name>{{ model }}</h5>
       <p class="card-text">{{ price }}</p>
