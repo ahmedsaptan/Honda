@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+
+      <trans-unit id="10EXPLORE" datatype="html">
+        <source>EXPLORE</source>
+        <target>اكتشف</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/carousel/carousel.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <note priority="1" from="description">Friendly welcoming message</note>
+        <note priority="1" from="meaning">EXPLORE button</note>
+      </trans-unit>
+      
+      <trans-unit id="AUTOMOBILES" datatype="html">
+        <source>AUTOMOBILES <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>(current)<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <target>السيارات</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/navbar.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+        <note priority="1" from="description">Friendly welcoming message</note>
+        <note priority="1" from="meaning">AUTOMOBILES header</note>
+      </trans-unit>
+
+      <trans-unit id="MODELS" datatype="html">
+        <source>MODELS</source>
+        <target>الموديلات</target>
+
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/navbar.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+        <note priority="1" from="description">Friendly welcoming message</note>
+        <note priority="1" from="meaning">MODELS header</note>
+      </trans-unit>
+      <trans-unit id="OWNERS" datatype="html">
+        <source>OWNERS <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>(current)<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+         <target>أصحاب</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/navbar.component.html</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+        <note priority="1" from="description">Friendly welcoming message</note>
+        <note priority="1" from="meaning">OWNERS header</note>
+      </trans-unit>
+      <trans-unit id="contactus" datatype="html">
+        <source>
+        Contact us
+      </source>
+       <target>اتصل بنا</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/navbar.component.html</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+        <note priority="1" from="description">Friendly welcoming message</note>
+        <note priority="1" from="meaning">contactus header</note>
+      </trans-unit>
+      <trans-unit id="Home" datatype="html">
+        <source>Home</source>
+         <target>الصفحة الرئيسسة</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/navbar.component.html</context>
+          <context context-type="linenumber">64</context>
+        </context-group>
+        <note priority="1" from="description">Friendly welcoming message</note>
+        <note priority="1" from="meaning">Home menu</note>
+      </trans-unit>
+      <trans-unit id="1ABOUT" datatype="html">
+        <source>ABOUT</source>
+        <target>الاخبار</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/navbar.component.html</context>
+          <context context-type="linenumber">68</context>
+        </context-group>
+        <note priority="1" from="description">Friendly welcoming message</note>
+        <note priority="1" from="meaning">ABOUT menu</note>
+      </trans-unit>
+      <trans-unit id="1SAFETY" datatype="html">
+        <source>SAFETY</source>
+        <target>الامان</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/navbar.component.html</context>
+          <context context-type="linenumber">71</context>
+        </context-group>
+        <note priority="1" from="description">Friendly welcoming message</note>
+        <note priority="1" from="meaning">SAFETY menu</note>
+      </trans-unit>
+      <trans-unit id="1TECHNOLOGY" datatype="html">
+        <source>TECHNOLOGY</source>
+        <target>تقنية</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/navbar.component.html</context>
+          <context context-type="linenumber">74</context>
+        </context-group>
+        <note priority="1" from="description">Friendly welcoming message</note>
+        <note priority="1" from="meaning">TECHNOLOGY menu</note>
+      </trans-unit>
+      <trans-unit id="1SERVICE-AND-WARANTY" datatype="html">
+        <source>SERVICE AND WARANTY</source>
+         <target>الخدمات والضمان</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/navbar.component.html</context>
+          <context context-type="linenumber">77</context>
+        </context-group>
+        <note priority="1" from="description">Friendly welcoming message</note>
+        <note priority="1" from="meaning">SERVICE AND WARANTY menu</note>
+      </trans-unit>
+      <trans-unit id="1ABOUT-THE-DELLAR" datatype="html">
+        <source>ABOUT THE DELLAR</source>
+        <target>الاخبار عن </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/navbar.component.html</context>
+          <context context-type="linenumber">80</context>
+        </context-group>
+        <note priority="1" from="description">Friendly welcoming message</note>
+        <note priority="1" from="meaning">ABOUT THE DELLAR menu</note>
+      </trans-unit>
+      <trans-unit id="1HONDA-WORLD-WIDE" datatype="html">
+        <source>HONDA WORLD WIDE</source>
+         <target> هوندا حول العالم</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/navbar.component.html</context>
+          <context context-type="linenumber">83</context>
+        </context-group>
+        <note priority="1" from="description">Friendly welcoming message</note>
+        <note priority="1" from="meaning">HONDA WORLD WIDE sub menu</note>
+      </trans-unit>
+      <trans-unit id="1OFFERS-AND-PROMOTIONS" datatype="html">
+        <source>OFFERS AND PROMOTIONS</source>
+         <target> العروض</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/navbar.component.html</context>
+          <context context-type="linenumber">84</context>
+        </context-group>
+        <note priority="1" from="description">Friendly welcoming message</note>
+        <note priority="1" from="meaning">OFFERS AND PROMOTIONS sub menu</note>
+      </trans-unit>
+      <trans-unit id="1THE-SOCIAL-WALL" datatype="html">
+        <source>THE SOCIAL WALL</source>
+         <target>الجدار الاجتماعي</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/navbar.component.html</context>
+          <context context-type="linenumber">85</context>
+        </context-group>
+        <note priority="1" from="description">Friendly welcoming message</note>
+        <note priority="1" from="meaning">THE SOCIAL WALL sub menu</note>
+      </trans-unit>
+      <trans-unit id="1MEDIA-CENTER" datatype="html">
+        <source>MEDIA CENTER</source>
+         <target> المركز الاعلامي</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/navbar.component.html</context>
+          <context context-type="linenumber">86</context>
+        </context-group>
+        <note priority="1" from="description">Friendly welcoming message</note>
+        <note priority="1" from="meaning">MEDIA CENTER sub menu</note>
+      </trans-unit>
+      <trans-unit id="2Automobiles" datatype="html">
+        <source>Automobiles</source>
+        <target>  السيارات</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/navbar.component.html</context>
+          <context context-type="linenumber">99</context>
+        </context-group>
+        <note priority="1" from="description">Friendly welcoming message</note>
+        <note priority="1" from="meaning">Automobiles sub menu</note>
+      </trans-unit>
+      <trans-unit id="2Motocycle" datatype="html">
+        <source>Motocycle</source>
+        <target>  الدرجات النارية</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/navbar.component.html</context>
+          <context context-type="linenumber">106</context>
+        </context-group>
+        <note priority="1" from="description">Friendly welcoming message</note>
+        <note priority="1" from="meaning">Motocycle sub menu</note>
+      </trans-unit>
+      <trans-unit id="2Power-Products" datatype="html">
+        <source>Power Products</source>
+        <target>  منتجات القوة</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/navbar.component.html</context>
+          <context context-type="linenumber">113</context>
+        </context-group>
+        <note priority="1" from="description">Friendly welcoming message</note>
+        <note priority="1" from="meaning">Power Productsbiles sub menu</note>
+      </trans-unit>
+      <trans-unit id="2Marine" datatype="html">
+        <source>Marine</source>
+        <target>  مارينا</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/navbar.component.html</context>
+          <context context-type="linenumber">120</context>
+        </context-group>
+        <note priority="1" from="description">Friendly welcoming message</note>
+        <note priority="1" from="meaning">Marine sub menu</note>
+      </trans-unit>
+      <trans-unit id="3Country" datatype="html">
+        <source>Country</source>
+        <target>  البلد</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/navbar.component.html</context>
+          <context context-type="linenumber">133</context>
+        </context-group>
+        <note priority="1" from="description">Friendly welcoming message</note>
+        <note priority="1" from="meaning">Country countries menu</note>
+      </trans-unit>
+      <trans-unit id="3I-Live-in" datatype="html">
+        <source>I Live in</source>
+        <target>  انا اعيش فى </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/navbar.component.html</context>
+          <context context-type="linenumber">136</context>
+        </context-group>
+        <note priority="1" from="description">Friendly welcoming message</note>
+        <note priority="1" from="meaning">Lang countries menu</note>
+      </trans-unit>
+      <trans-unit id="3State" datatype="html">
+        <source>State</source>
+        <target>  الدوله</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/navbar.component.html</context>
+          <context context-type="linenumber">138</context>
+        </context-group>
+        <note priority="1" from="description">Friendly welcoming message</note>
+        <note priority="1" from="meaning">State countries menu</note>
+      </trans-unit>
+      <trans-unit id="3Egypt" datatype="html">
+        <source>Egypt</source>
+        <target>  مصر</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/navbar.component.html</context>
+          <context context-type="linenumber">139</context>
+        </context-group>
+        <note priority="1" from="description">Friendly welcoming message</note>
+        <note priority="1" from="meaning">Egypt countries menu</note>
+      </trans-unit>
+      <trans-unit id="3Canada" datatype="html">
+        <source>Canada</source>
+        <target>  كندا</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/navbar.component.html</context>
+          <context context-type="linenumber">140</context>
+        </context-group>
+        <note priority="1" from="description">Friendly welcoming message</note>
+        <note priority="1" from="meaning">Canada countries menu</note>
+      </trans-unit>
+      <trans-unit id="3China" datatype="html">
+        <source>China</source>
+        <target>  الصين</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/navbar.component.html</context>
+          <context context-type="linenumber">141</context>
+        </context-group>
+        <note priority="1" from="description">Friendly welcoming message</note>
+        <note priority="1" from="meaning">China countries menu</note>
+      </trans-unit>
+      <trans-unit id="3Colombia" datatype="html">
+        <source>Colombia</source>
+        <target>  كولومبيا</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/navbar.component.html</context>
+          <context context-type="linenumber">142</context>
+        </context-group>
+        <note priority="1" from="description">Friendly welcoming message</note>
+        <note priority="1" from="meaning">Colombia countries menu</note>
+      </trans-unit>
+      <trans-unit id="3France" datatype="html">
+        <source>France</source>
+        <target>  فرنسا</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/navbar.component.html</context>
+          <context context-type="linenumber">143</context>
+        </context-group>
+        <note priority="1" from="description">Friendly welcoming message</note>
+        <note priority="1" from="meaning">France countries menu</note>
+      </trans-unit>
+      <trans-unit id="3I-Spock" datatype="html">
+        <source>I Spock</source>
+        <target>  انا اتحدث</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/navbar.component.html</context>
+          <context context-type="linenumber">148</context>
+        </context-group>
+        <note priority="1" from="description">Friendly welcoming message</note>
+        <note priority="1" from="meaning">I Live in sub menu</note>
+      </trans-unit>
+      <trans-unit id="3Lang" datatype="html">
+        <source>Lang</source>
+        <target>  اللغه</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/navbar.component.html</context>
+          <context context-type="linenumber">150</context>
+        </context-group>
+        <note priority="1" from="description">Friendly welcoming message</note>
+        <note priority="1" from="meaning">Lang languages menu</note>
+      </trans-unit>
+      <trans-unit id="3English" datatype="html">
+        <source>English</source>
+        <target>  الانجليزية</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/navbar.component.html</context>
+          <context context-type="linenumber">151</context>
+        </context-group>
+        <note priority="1" from="description">Friendly welcoming message</note>
+        <note priority="1" from="meaning">English languages menu</note>
+      </trans-unit>
+      <trans-unit id="3Arabic" datatype="html">
+        <source>Arabic</source>
+        <target>  العربية</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/navbar.component.html</context>
+          <context context-type="linenumber">152</context>
+        </context-group>
+        <note priority="1" from="description">Friendly welcoming message</note>
+        <note priority="1" from="meaning">Arabic languages menu</note>
+      </trans-unit>
+      <trans-unit id="3Chinese" datatype="html">
+        <source>Chinese</source>
+        <target>  الصينية</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/navbar.component.html</context>
+          <context context-type="linenumber">153</context>
+        </context-group>
+        <note priority="1" from="description">Friendly welcoming message</note>
+        <note priority="1" from="meaning">Chinese languages menu</note>
+      </trans-unit>
+      <trans-unit id="3Spanish" datatype="html">
+        <source>Spanish</source>
+        <target>  الاسبانية</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/navbar.component.html</context>
+          <context context-type="linenumber">154</context>
+        </context-group>
+        <note priority="1" from="description">Friendly welcoming message</note>
+        <note priority="1" from="meaning">Spanish languages menu</note>
+      </trans-unit>
+      <trans-unit id="3Hindi" datatype="html">
+        <source>Hindi</source>
+        <target>  الهندية</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/navbar.component.html</context>
+          <context context-type="linenumber">155</context>
+        </context-group>
+        <note priority="1" from="description">Friendly welcoming message</note>
+        <note priority="1" from="meaning">Hindi languages menu</note>
+      </trans-unit>
+      <trans-unit id="3Processed" datatype="html">
+        <source> Processed</source>
+        <target>  اكمل</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/navbar.component.html</context>
+          <context context-type="linenumber">159</context>
+        </context-group>
+        <note priority="1" from="description">Friendly welcoming message</note>
+        <note priority="1" from="meaning">Processed sub menu</note>
+      </trans-unit>
+      <trans-unit id="4FOLLOW" datatype="html">
+        <source>FOLLOW US</source>
+        <target>  تابعنا</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/navbar.component.html</context>
+          <context context-type="linenumber">167</context>
+        </context-group>
+        <note priority="1" from="description">Friendly welcoming message</note>
+        <note priority="1" from="meaning">FOLLOW sub menu</note>
+      </trans-unit>
+      <trans-unit id="4Facebook" datatype="html">
+        <source>Facebook</source>
+        <target>  قيسبوك</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/navbar.component.html</context>
+          <context context-type="linenumber">173</context>
+        </context-group>
+        <note priority="1" from="description">Friendly welcoming message</note>
+        <note priority="1" from="meaning">facebook sub menu</note>
+      </trans-unit>
+      <trans-unit id="4Twitter" datatype="html">
+        <source>Twitter</source>
+        <target>  تويتر</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/navbar.component.html</context>
+          <context context-type="linenumber">180</context>
+        </context-group>
+        <note priority="1" from="description">Friendly welcoming message</note>
+        <note priority="1" from="meaning">Twitter sub menu</note>
+      </trans-unit>
+      <trans-unit id="4Youtube" datatype="html">
+        <source>Youtube</source>
+        <target>  يوتيوب</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/navbar.component.html</context>
+          <context context-type="linenumber">187</context>
+        </context-group>
+        <note priority="1" from="description">Friendly welcoming message</note>
+        <note priority="1" from="meaning">Youtube sub menu</note>
+      </trans-unit>
+      <trans-unit id="4instagram" datatype="html">
+        <source>Instagram</source>
+        <target>  انستجرام</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/navbar.component.html</context>
+          <context context-type="linenumber">194</context>
+        </context-group>
+        <note priority="1" from="description">Friendly welcoming message</note>
+        <note priority="1" from="meaning">instagram sub menu</note>
+      </trans-unit>
+      <trans-unit id="11EXPLORE" datatype="html">
+        <source>EXPLORE</source>
+        <target>  اكتشف</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/car-card/car-card.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <note priority="1" from="description">Friendly welcoming message</note>
+        <note priority="1" from="meaning">EXPLORE button</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

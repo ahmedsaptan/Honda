@@ -19,26 +19,26 @@
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
         <button class="btn btn-light">
-              <a class="nav-link" href="#">AUTOMOBILES <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#" i18n="AUTOMOBILES header|Friendly welcoming message@@AUTOMOBILES">AUTOMOBILES <span class="sr-only">(current)</span></a>
           </button>
 
       </li>
 
       <li class="nav-item">
         <button type="button" (click)="models = !models" [attr.aria-expanded]="!models" aria-controls="testtest" class="btn btn-light">
-              <a class="nav-link">MODELS</a>
+              <a class="nav-link" i18n="MODELS header|Friendly welcoming message@@MODELS">MODELS</a>
             </button>
       </li>
 
       <li class="nav-item">
         <button class="btn btn-light">
-                <a class="nav-link" href="#">OWNERS <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#" i18n="OWNERS header|Friendly welcoming message@@OWNERS">OWNERS <span class="sr-only">(current)</span></a>
             </button>
 
       </li>
     </ul>
 
-    <button type="button" class="btn btn-danger" [routerLink]="['/contactus']">
+    <button type="button" class="btn btn-danger" [routerLink]="['/contactus']" i18n="contactus header|Friendly welcoming message@@contactus">
         Contact us
       </button>
 
@@ -61,29 +61,29 @@
         <div class="ui link list">
 
           <div class="active item">
-            <div class="header" style="color: red;">Home</div>
+            <div class="header" style="color: red;" i18n="Home menu|Friendly welcoming message@@Home">Home</div>
           </div>
 
           <a class="item">
-            <div class="header">ABOUT</div>
+            <div class="header" i18n="ABOUT menu|Friendly welcoming message@@1ABOUT">ABOUT</div>
           </a>
           <a class="item">
-            <div class="header">SAFETY</div>
+            <div class="header" i18n="SAFETY menu|Friendly welcoming message@@1SAFETY">SAFETY</div>
           </a>
           <a class="item">
-            <div class="header">TECHNOLOGY</div>
+            <div class="header" i18n="TECHNOLOGY menu|Friendly welcoming message@@1TECHNOLOGY">TECHNOLOGY</div>
           </a>
           <a class="item">
-            <div class="header">SERVICE AND WARANTY</div>
+            <div class="header" i18n="SERVICE AND WARANTY menu|Friendly welcoming message@@1SERVICE-AND-WARANTY">SERVICE AND WARANTY</div>
           </a>
           <a class="item">
-            <div class="header">ABOUT THE DELLAR</div>
+            <div class="header" i18n="ABOUT THE DELLAR menu|Friendly welcoming message@@1ABOUT-THE-DELLAR">ABOUT THE DELLAR</div>
           </a>
           <hr>
-          <a class="item">HONDA WORLD WIDE</a>
-          <a class="item">OFFERS AND PROMOTIONS</a>
-          <a class="item">THE SOCIAL WALL</a>
-          <a class="item">MEDIA CENTER</a>
+          <a class="item" i18n="HONDA WORLD WIDE sub menu|Friendly welcoming message@@1HONDA-WORLD-WIDE">HONDA WORLD WIDE</a>
+          <a class="item" i18n="OFFERS AND PROMOTIONS sub menu|Friendly welcoming message@@1OFFERS-AND-PROMOTIONS">OFFERS AND PROMOTIONS</a>
+          <a class="item" i18n="THE SOCIAL WALL sub menu|Friendly welcoming message@@1THE-SOCIAL-WALL">THE SOCIAL WALL</a>
+          <a class="item" i18n="MEDIA CENTER sub menu|Friendly welcoming message@@1MEDIA-CENTER">MEDIA CENTER</a>
         </div>
       </div>
 
@@ -96,28 +96,28 @@
           <div class="item">
             <img class="ui avatar image" src="../../assets/sedan.png">
             <div class="content">
-              <div class="header">Autmbiles</div>
+              <div class="header" i18n="Automobiles sub menu|Friendly welcoming message@@2Automobiles">Automobiles</div>
             </div>
           </div>
 
           <div class="item">
             <img class="ui avatar image" src="../../assets/motor-sports.png">
             <div class="content">
-              <div class="header">Motocycle</div>
+              <div class="header" i18n="Motocycle sub menu|Friendly welcoming message@@2Motocycle">Motocycle</div>
             </div>
           </div>
 
           <div class="item">
             <img class="ui avatar image" src="../../assets/scan.png">
             <div class="content">
-              <div class="header">Power Products</div>
+              <div class="header" i18n="Power Productsbiles sub menu|Friendly welcoming message@@2Power-Products">Power Products</div>
             </div>
           </div>
 
           <div class="item">
             <img class="ui avatar image" src="../../assets/rgb.png">
             <div class="content">
-              <div class="header">Marine</div>
+              <div class="header" i18n="Marine sub menu|Friendly welcoming message@@2Marine">Marine</div>
             </div>
           </div>
 
@@ -130,33 +130,33 @@
       <div class="col">
         <form class="ui form">
 
-          <h4 class="ui dividing header">Country</h4>
+          <h4 class="ui dividing header" i18n="Country countries menu|Friendly welcoming message@@3Country">Country</h4>
 
           <div class="field">
-            <label>I Live in</label>
+            <label i18n="Lang countries menu|Friendly welcoming message@@3I-Live-in">I Live in</label>
             <select class="ui fluid dropdown">
-                <option value="">State</option>
-                <option value="AL">Alabama</option>
-                <option value="AK">Alaska</option>
-                <option value="AZ">Arizona</option>
-                <option value="AR">Arkansas</option>
-                <option value="CA">California</option>
+                <option value="" i18n="State countries menu|Friendly welcoming message@@3State">State</option>
+                <option value="Egypt" i18n="Egypt countries menu|Friendly welcoming message@@3Egypt">Egypt</option>
+                <option value="Canada" i18n="Canada countries menu|Friendly welcoming message@@3Canada">Canada</option>
+                <option value="China" i18n="China countries menu|Friendly welcoming message@@3China">China</option>
+                <option value="Colombia" i18n="Colombia countries menu|Friendly welcoming message@@3Colombia">Colombia</option>
+                <option value="France" i18n="France countries menu|Friendly welcoming message@@3France">France</option>
             </select>
           </div>
 
           <div class="field">
-            <label>I Live in</label>
+            <label i18n="I Live in sub menu|Friendly welcoming message@@3I-Spock">I Spock</label>
             <select class="ui fluid dropdown">
-                <option value="">Lang</option>
-                <option value="ARBIC">en</option>
-                <option value="AK">ar</option>
-                <option value="AZ">Arizona</option>
-                <option value="AR">Arkansas</option>
-                <option value="CA">California</option>
+                <option value="" i18n="Lang languages menu|Friendly welcoming message@@3Lang">Lang</option>
+                <option value="English" i18n="English languages menu|Friendly welcoming message@@3English">English</option>
+                <option value="Arabic" i18n="Arabic languages menu|Friendly welcoming message@@3Arabic">Arabic</option>
+                <option value="Chinese" i18n="Chinese languages menu|Friendly welcoming message@@3Chinese">Chinese</option>
+                <option value="Spanish" i18n="Spanish languages menu|Friendly welcoming message@@3Spanish">Spanish</option>
+                <option value="Hindi" i18n="Hindi languages menu|Friendly welcoming message@@3Hindi">Hindi</option>
             </select>
           </div>
 
-          <div class="ui button" tabindex="0" style="color: red;"> Processed</div>
+          <div class="ui button" tabindex="0" style="color: red;" i18n="Processed sub menu|Friendly welcoming message@@3Processed"> Processed</div>
         </form>
       </div>
 
@@ -164,34 +164,34 @@
 
 
       <div class="col">
-        <h4 class="ui dividing header">FOLLOW US</h4>
+        <h4 class="ui dividing header" i18n="FOLLOW sub menu|Friendly welcoming message@@4FOLLOW">FOLLOW US</h4>
         <div class="ui middle aligned animated list">
 
           <div class="item">
             <img class="ui avatar image" src="../../assets/facebook.png">
             <div class="content">
-              <div class="header">Facebook</div>
+              <div class="header" i18n="facebook sub menu|Friendly welcoming message@@4Facebook">Facebook</div>
             </div>
           </div>
 
           <div class="item">
             <img class="ui avatar image" src="../../assets/twitter.png">
             <div class="content">
-              <div class="header">Twitter</div>
+              <div class="header" i18n="Twitter sub menu|Friendly welcoming message@@4Twitter">Twitter</div>
             </div>
           </div>
 
           <div class="item">
             <img class="ui avatar image" src="../../assets/youtube.png">
             <div class="content">
-              <div class="header">Youtube</div>
+              <div class="header" i18n="Youtube sub menu|Friendly welcoming message@@4Youtube">Youtube</div>
             </div>
           </div>
 
           <div class="item">
             <img class="ui avatar image" src="../../assets/instagram.png">
             <div class="content">
-              <div class="header">Instagram</div>
+              <div class="header" i18n="instagram sub menu|Friendly welcoming message@@4instagram">Instagram</div>
             </div>
           </div>
         </div>
