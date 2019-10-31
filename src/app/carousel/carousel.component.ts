@@ -10,7 +10,7 @@ export class CarouselComponent implements OnInit {
 
   cars
   constructor(private http: HttpClient) { 
-    this.http.get('http://localhost:3000/api/cars').subscribe((res) => {
+    this.http.get('api/cars').subscribe((res) => {
       console.log(res)
       this.cars = res
     })

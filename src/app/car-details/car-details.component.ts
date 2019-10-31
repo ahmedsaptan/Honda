@@ -20,7 +20,7 @@ export class CarDetailsComponent implements OnInit {
           // Hide loading indicator
           this.carName = this.route.snapshot.paramMap.get("name")
           console.log(this.carName)
-          this.http.get(`http://localhost:3000/api/cars/${this.carName}`).subscribe((res) => {
+          this.http.get(`api/cars/${this.carName}`).subscribe((res) => {
           this.car = res
           })
       }

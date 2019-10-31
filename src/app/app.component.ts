@@ -12,7 +12,7 @@ export class AppComponent {
   cars = null
   constructor(private http: HttpClient) {
     setTheme('bs4'); // or 'bs4'
-    http.get('http://localhost:3000/api/cars').subscribe((res) => {
+    http.get('api/cars').subscribe((res) => {
       console.log(res)
       this.cars = res
     })
