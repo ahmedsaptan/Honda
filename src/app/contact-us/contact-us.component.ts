@@ -16,8 +16,8 @@ export class ContactUsComponent implements OnInit {
   errorObject
 
   constructor(private http: HttpClient) {
-  
-   }
+
+  }
 
   ngOnInit() {
     this.errorObject = {
@@ -27,75 +27,97 @@ export class ContactUsComponent implements OnInit {
       phoneNumber: true,
       category: true
     }
+    this.disabledSubmit()
   }
-  
+
 
   nameChangeInput() {
     console.log(this.fullName)
-    if(this.fullName === '' || this.fullName === null || this.fullName.length < 10 ) {
+    if (this.fullName === '' || this.fullName === null || this.fullName.length < 10) {
       this.errorObject.name = true
     } else {
       this.errorObject.name = false
     }
 
-    console.log(this.errorObject)
+    console.log(this.errorObject.name)
     this.disabledSubmit()
   }
 
   emailChangeInput() {
-    if(this.email === '' || this.email === null || this.email.length < 10) {
+    console.log(this.email)
+    if (this.email === '' || this.email === null || this.email.length < 10) {
       this.errorObject.email = true
     } else {
-      this.errorObject.email = false
+      try {
+        if (this.email.split('@')[1].split('.')[1] === 'com') {
+          this.errorObject.email = false
+        } else {
+          this.errorObject.email = true
+        }
+      } catch (e) {
+        this.errorObject.email = true
+      }
+
     }
 
-    console.log(this.errorObject)
+    console.log(this.errorObject.email)
     this.disabledSubmit()
   }
 
   phoneNumberChangeinput() {
-    if(this.phoneNumber === '' || this.phoneNumber === null || this.phoneNumber.length < 11 || this.phoneNumber.length > 11 ) {
+    console.log(this.phoneNumber)
+    if (this.phoneNumber === '' || this.phoneNumber === null || this.phoneNumber.length < 11 || this.phoneNumber.length > 11) {
       this.errorObject.phoneNumber = true
     } else {
-      this.errorObject.phoneNumber = false
+      if (Number(this.phoneNumber) !== NaN) {
+        this.errorObject.phoneNumber = false
+      } else {
+        this.errorObject.phoneNumber = true
+      }
+
     }
 
-    console.log(this.errorObject)
+    console.log(this.errorObject.phoneNumber)
     this.disabledSubmit()
   }
 
   descriptionChangeInput() {
-    if(this.description === '' || this.description === null || this.description.length < 50) {
+    console.log(this.description)
+    if (this.description === '' || this.description === null || this.description.length < 20) {
       this.errorObject.description = true
     } else {
       this.errorObject.description = false
     }
 
-    console.log(this.errorObject)
+    console.log(this.errorObject.description)
     this.disabledSubmit()
   }
 
   categoryChangeInput() {
-    if(this.category === '' || this.category === null) {
-      if(this.description !== 'Automobile' && this.description !== 'MotorCycle' && this.description !== 'Marine' && this.description !== 'Power-Product') {
-        this.errorObject.category = true
-      }else {
+    console.log(this.category)
+    if (this.category !== '' || this.category !== null) {
+      if (this.category === 'Automobile' || this.category === 'MotorCycle' || this.category === 'Marine' || this.category === 'Power-Product') {
         this.errorObject.category = false
+      } else {
+        this.errorObject.category = true
       }
-    } 
-
-    console.log(this.errorObject)
+    } else {
+      this.errorObject.category = true
+    }
+    console.log(this.errorObject.category)
     this.disabledSubmit()
   }
 
   disabledSubmit() {
-    // return !(this.errorObject.description && this.errorObject.name && this.errorObject.email && this.errorObject.phoneNumber && this.errorObject.category)
+    return (this.errorObject.description || this.errorObject.name || this.errorObject.email || this.errorObject.phoneNumber || this.errorObject.category)
   }
+
   sendDataToserver() {
-    
+
     let headers = new HttpHeaders({
       'Access-Control-Allow-Methods': 'GET,POST,OPTIONS,DELETE,PUT',
-      'Access-Control-Allow': '*', });
+      'Access-Control-Allow': '*',
+    });
     let options = { headers: headers };
 
     console.log('send data fron severe')
